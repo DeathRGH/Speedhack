@@ -33,3 +33,6 @@ ulong valueAddress = entry + 0x964; // fixed offset in elf
 
 ps4.WriteSingle(processID, valueAddress, 1.0f);
 ```
+
+## Credits
+- TLH
