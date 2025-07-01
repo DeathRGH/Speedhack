@@ -21,10 +21,10 @@ powershell.exe /c C:\Windows\sysnative\wsl.exe
 You can directly write to the value `writeableSetupValue`.<br>
 There is currently no way to export this so compiling with symbols will make it easier to find the value offset in the elf.
 The offset might change on rebuilding the elf.<br>
-It can be found easily by loading the built elf in ida and look for symbolic name `writeableSetupValue`.<br>
+It can be found easily by loading the built elf in ida and looking for the symbolic name `writeableSetupValue`.<br>
 Make sure you load it as a standard elf, the ps4 ida loaders usually dont load symbols!<br>
 <br>
-The offset for the 1.0 release is `0x964`.
+The offset for the [Release 1.0](https://github.com/DeathRGH/Speedhack/releases/tag/1.0) is `0x964`.
 
 C# Example using [Frame4](https://github.com/DeathRGH/frame4).
 ```cs
