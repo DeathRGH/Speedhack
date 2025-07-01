@@ -7,7 +7,7 @@ ODIR	:=	build
 SDIR	:=	source
 IDIRS	:=	-I. -Iinclude
 LDIRS	:=	-L. -Llib
-CFLAGS	:=	$(IDIRS) $(LDIRS) -O3 -s -w -std=gnu++11 -fno-builtin -fno-exceptions -fno-asynchronous-unwind-tables -nostartfiles -nostdlib -w -masm=intel -march=btver2 -mtune=btver2 -m64 -mabi=sysv -mcmodel=small -mstackrealign -fPIE
+CFLAGS	:=	$(IDIRS) $(LDIRS) -O3 -g -w -std=gnu++11 -fno-builtin -fno-exceptions -fno-asynchronous-unwind-tables -nostartfiles -nostdlib -w -masm=intel -march=btver2 -mtune=btver2 -m64 -mabi=sysv -mcmodel=small -mstackrealign -fPIE
 SFLAGS	:=	-nostartfiles -nostdlib -masm=intel -march=btver2 -mtune=btver2 -m64 -mabi=sysv -mcmodel=small
 LFLAGS	:=	-Xlinker -T $(LFILE) -Wl,--build-id=none -mstackrealign -pie
 CFILES	:=	$(wildcard *.cpp)
