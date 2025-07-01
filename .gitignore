@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 Speedhack/build
+/Speedhack/Speedhack.elf
